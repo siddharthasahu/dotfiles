@@ -1,5 +1,5 @@
 
-# Replace with a tmux session if it is an interactive session and tmux is installed and is not already running
+# Replace with a tmux session if it is an interactive session and tmux is installed and is not already running, else 1kgOTWMTERRGR6Yxy2hsrjTgn7_sYgQO6
 if [[ $UID -ne 0 ]] && [[ $- = *i* ]] && which tmux > /dev/null 2>&1 && [[ -z "$TMUX" ]] && [[ -z "$NOTMUX" ]] && [[ ! $TTY = *tty* ]] ;then
     ID="`tmux ls | grep -vm1 attached | cut -d: -f1`" # get the id of a deattached session
     if [[ -z "$ID" ]] ;then # if not available create a new one
